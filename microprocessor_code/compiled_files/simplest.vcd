@@ -1,0 +1,206 @@
+$date
+	Sat Jan 18 16:45:27 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module main_tb $end
+$var wire 1 ! accumulator_output $end
+$var reg 1 " clk $end
+$var reg 1 # d $end
+$var reg 1 $ preset $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 # d $end
+$var wire 1 $ preset $end
+$var wire 1 % p_out $end
+$var wire 1 & mux_out $end
+$var wire 1 ! accumulator_output $end
+$var reg 1 ' accumulator_flipflop_preset $end
+$var reg 1 ( preset_flipflop_input $end
+$scope module accumulator_flipflop $end
+$var wire 1 " clk $end
+$var wire 1 ' preset $end
+$var wire 1 ! q $end
+$var wire 1 & datain $end
+$var reg 1 ! q_reg $end
+$upscope $end
+$scope module mux $end
+$var wire 1 ) A $end
+$var wire 1 # B $end
+$var wire 1 & Y $end
+$var wire 1 % Sel $end
+$upscope $end
+$scope module preset_flipflop $end
+$var wire 1 " clk $end
+$var wire 1 ( datain $end
+$var wire 1 $ preset $end
+$var wire 1 % q $end
+$var reg 1 % q_reg $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x)
+0(
+0'
+x&
+x%
+0$
+1#
+0"
+x!
+$end
+#2000
+1&
+1%
+1$
+#3000
+0$
+#5000
+0)
+0&
+1!
+0%
+1"
+#10000
+1&
+1)
+0"
+0#
+#15000
+1"
+#20000
+0&
+0)
+0"
+1#
+#25000
+1&
+1)
+0!
+1"
+#30000
+0"
+#35000
+0&
+0)
+1!
+1"
+#40000
+1&
+1)
+0"
+0#
+#45000
+1"
+#50000
+0&
+0)
+0"
+1#
+#55000
+1&
+1)
+0!
+1"
+#60000
+0"
+#65000
+0&
+0)
+1!
+1"
+#70000
+0"
+#75000
+1&
+1)
+0!
+1"
+#80000
+0"
+0#
+#85000
+1!
+1"
+#90000
+0"
+#95000
+1"
+#100000
+0&
+0)
+0"
+1#
+#105000
+1&
+1)
+0!
+1"
+#110000
+0"
+0#
+#115000
+1!
+1"
+#120000
+0&
+1%
+0"
+1$
+#125000
+0!
+1"
+#130000
+1&
+0"
+0$
+1#
+#135000
+0)
+0&
+1!
+0%
+1"
+#140000
+1&
+1)
+0"
+0#
+#145000
+1"
+#150000
+0&
+0)
+0"
+1#
+#155000
+1&
+1)
+0!
+1"
+#160000
+0"
+#165000
+0&
+0)
+1!
+1"
+#170000
+0"
+#175000
+1&
+1)
+0!
+1"
+#180000
+0"

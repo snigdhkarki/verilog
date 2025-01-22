@@ -1,0 +1,60 @@
+$date
+	Thu Jan 16 22:10:47 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ram_8bit_16bit_addr_tb $end
+$var wire 8 ! dataout [7:0] $end
+$var reg 16 " address [15:0] $end
+$var reg 1 # clear $end
+$scope module uut $end
+$var wire 16 $ address [15:0] $end
+$var wire 1 # clear $end
+$var wire 8 % dataout [7:0] $end
+$var integer 32 & i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx &
+b10010 %
+b0 $
+0#
+b0 "
+b10010 !
+$end
+#10000
+b10011 !
+b10011 %
+b1 "
+b1 $
+#20000
+b10100 !
+b10100 %
+b10 "
+b10 $
+#30000
+b10000000000000000 &
+b0 !
+b0 %
+1#
+#40000
+0#
+#50000
+b1 "
+b1 $
+#60000
+b10 "
+b10 $
+#70000
+b1111111111111111 "
+b1111111111111111 $
+#120000

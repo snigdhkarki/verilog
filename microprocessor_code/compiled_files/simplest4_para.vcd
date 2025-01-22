@@ -1,0 +1,742 @@
+$date
+	Mon Jan 20 22:51:01 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module simplest4_para_tb $end
+$var wire 1 ! accumulator_output3 $end
+$var wire 1 " accumulator_output2 $end
+$var wire 1 # accumulator_output1 $end
+$var wire 1 $ accumulator_output0 $end
+$var reg 1 % clk $end
+$var reg 1 & counter_ram8_reset $end
+$var reg 1 ' preset $end
+$scope module uut $end
+$var wire 1 % clk $end
+$var wire 1 & counter_ram8_reset $end
+$var wire 1 ' preset $end
+$var wire 16 ( stack_out3 [15:0] $end
+$var wire 16 ) stack_out2 [15:0] $end
+$var wire 16 * stack_out1 [15:0] $end
+$var wire 16 + stack_out0 [15:0] $end
+$var wire 16 , ram8_out3 [15:0] $end
+$var wire 16 - ram8_out2 [15:0] $end
+$var wire 16 . ram8_out1 [15:0] $end
+$var wire 16 / ram8_out0 [15:0] $end
+$var wire 17 0 dataout_address_and_condition3 [16:0] $end
+$var wire 17 1 dataout_address_and_condition2 [16:0] $end
+$var wire 17 2 dataout_address_and_condition1 [16:0] $end
+$var wire 17 3 dataout_address_and_condition0 [16:0] $end
+$var wire 1 4 d3 $end
+$var wire 1 5 d2 $end
+$var wire 1 6 d1 $end
+$var wire 1 7 d0 $end
+$var wire 16 8 count_out3 [15:0] $end
+$var wire 16 9 count_out2 [15:0] $end
+$var wire 16 : count_out1 [15:0] $end
+$var wire 16 ; count_out0 [15:0] $end
+$var wire 1 ! accumulator_output3 $end
+$var wire 1 " accumulator_output2 $end
+$var wire 1 # accumulator_output1 $end
+$var wire 1 $ accumulator_output0 $end
+$var reg 1 < ram1_clear $end
+$var reg 1 = ram8_clear $end
+$scope module core0 $end
+$var wire 1 % clk $end
+$var wire 1 ' preset $end
+$var wire 16 > stack_out [15:0] $end
+$var wire 16 ? ram8_out [15:0] $end
+$var wire 1 @ p_out $end
+$var wire 1 A mux_out $end
+$var wire 17 B dataout_address_and_condition [16:0] $end
+$var wire 1 7 d $end
+$var wire 16 C count_out [15:0] $end
+$var wire 1 $ accumulator_output $end
+$var reg 1 D accumulator_flipflop_preset $end
+$var reg 1 E preset_flipflop_input $end
+$scope module accumulator_flipflop $end
+$var wire 1 % clk $end
+$var wire 1 D preset $end
+$var wire 1 $ q $end
+$var wire 1 A datain $end
+$var reg 1 $ q_reg $end
+$upscope $end
+$scope module mux $end
+$var wire 1 F A $end
+$var wire 1 A Y $end
+$var wire 1 @ Sel $end
+$var wire 1 7 B $end
+$upscope $end
+$scope module preset_flipflop $end
+$var wire 1 % clk $end
+$var wire 1 E datain $end
+$var wire 1 G preset $end
+$var wire 1 @ q $end
+$var reg 1 @ q_reg $end
+$upscope $end
+$scope module stack_jump $end
+$var wire 1 % clk $end
+$var wire 16 H datain [15:0] $end
+$var wire 1 I pop $end
+$var wire 1 J push $end
+$var reg 16 K dataout [15:0] $end
+$var reg 5 L sp [4:0] $end
+$upscope $end
+$upscope $end
+$scope module core1 $end
+$var wire 1 % clk $end
+$var wire 1 ' preset $end
+$var wire 16 M stack_out [15:0] $end
+$var wire 16 N ram8_out [15:0] $end
+$var wire 1 O p_out $end
+$var wire 1 P mux_out $end
+$var wire 17 Q dataout_address_and_condition [16:0] $end
+$var wire 1 6 d $end
+$var wire 16 R count_out [15:0] $end
+$var wire 1 # accumulator_output $end
+$var reg 1 S accumulator_flipflop_preset $end
+$var reg 1 T preset_flipflop_input $end
+$scope module accumulator_flipflop $end
+$var wire 1 % clk $end
+$var wire 1 S preset $end
+$var wire 1 # q $end
+$var wire 1 P datain $end
+$var reg 1 # q_reg $end
+$upscope $end
+$scope module mux $end
+$var wire 1 U A $end
+$var wire 1 P Y $end
+$var wire 1 O Sel $end
+$var wire 1 6 B $end
+$upscope $end
+$scope module preset_flipflop $end
+$var wire 1 % clk $end
+$var wire 1 T datain $end
+$var wire 1 V preset $end
+$var wire 1 O q $end
+$var reg 1 O q_reg $end
+$upscope $end
+$scope module stack_jump $end
+$var wire 1 % clk $end
+$var wire 16 W datain [15:0] $end
+$var wire 1 X pop $end
+$var wire 1 Y push $end
+$var reg 16 Z dataout [15:0] $end
+$var reg 5 [ sp [4:0] $end
+$upscope $end
+$upscope $end
+$scope module core2 $end
+$var wire 1 % clk $end
+$var wire 1 ' preset $end
+$var wire 16 \ stack_out [15:0] $end
+$var wire 16 ] ram8_out [15:0] $end
+$var wire 1 ^ p_out $end
+$var wire 1 _ mux_out $end
+$var wire 17 ` dataout_address_and_condition [16:0] $end
+$var wire 1 5 d $end
+$var wire 16 a count_out [15:0] $end
+$var wire 1 " accumulator_output $end
+$var reg 1 b accumulator_flipflop_preset $end
+$var reg 1 c preset_flipflop_input $end
+$scope module accumulator_flipflop $end
+$var wire 1 % clk $end
+$var wire 1 b preset $end
+$var wire 1 " q $end
+$var wire 1 _ datain $end
+$var reg 1 " q_reg $end
+$upscope $end
+$scope module mux $end
+$var wire 1 d A $end
+$var wire 1 _ Y $end
+$var wire 1 ^ Sel $end
+$var wire 1 5 B $end
+$upscope $end
+$scope module preset_flipflop $end
+$var wire 1 % clk $end
+$var wire 1 c datain $end
+$var wire 1 e preset $end
+$var wire 1 ^ q $end
+$var reg 1 ^ q_reg $end
+$upscope $end
+$scope module stack_jump $end
+$var wire 1 % clk $end
+$var wire 16 f datain [15:0] $end
+$var wire 1 g pop $end
+$var wire 1 h push $end
+$var reg 16 i dataout [15:0] $end
+$var reg 5 j sp [4:0] $end
+$upscope $end
+$upscope $end
+$scope module core3 $end
+$var wire 1 % clk $end
+$var wire 1 ' preset $end
+$var wire 16 k stack_out [15:0] $end
+$var wire 16 l ram8_out [15:0] $end
+$var wire 1 m p_out $end
+$var wire 1 n mux_out $end
+$var wire 17 o dataout_address_and_condition [16:0] $end
+$var wire 1 4 d $end
+$var wire 16 p count_out [15:0] $end
+$var wire 1 ! accumulator_output $end
+$var reg 1 q accumulator_flipflop_preset $end
+$var reg 1 r preset_flipflop_input $end
+$scope module accumulator_flipflop $end
+$var wire 1 % clk $end
+$var wire 1 q preset $end
+$var wire 1 ! q $end
+$var wire 1 n datain $end
+$var reg 1 ! q_reg $end
+$upscope $end
+$scope module mux $end
+$var wire 1 s A $end
+$var wire 1 n Y $end
+$var wire 1 m Sel $end
+$var wire 1 4 B $end
+$upscope $end
+$scope module preset_flipflop $end
+$var wire 1 % clk $end
+$var wire 1 r datain $end
+$var wire 1 t preset $end
+$var wire 1 m q $end
+$var reg 1 m q_reg $end
+$upscope $end
+$scope module stack_jump $end
+$var wire 1 % clk $end
+$var wire 16 u datain [15:0] $end
+$var wire 1 v pop $end
+$var wire 1 w push $end
+$var reg 16 x dataout [15:0] $end
+$var reg 5 y sp [4:0] $end
+$upscope $end
+$upscope $end
+$scope module counter_ram8_0 $end
+$var wire 1 % clk $end
+$var wire 16 z datain [15:0] $end
+$var wire 16 { initial_value [15:0] $end
+$var wire 1 | load $end
+$var wire 1 & reset $end
+$var wire 16 } dataout [15:0] $end
+$var reg 16 ~ dataout_reg [15:0] $end
+$upscope $end
+$scope module counter_ram8_1 $end
+$var wire 1 % clk $end
+$var wire 16 !" datain [15:0] $end
+$var wire 16 "" initial_value [15:0] $end
+$var wire 1 #" load $end
+$var wire 1 & reset $end
+$var wire 16 $" dataout [15:0] $end
+$var reg 16 %" dataout_reg [15:0] $end
+$upscope $end
+$scope module counter_ram8_2 $end
+$var wire 1 % clk $end
+$var wire 16 &" datain [15:0] $end
+$var wire 16 '" initial_value [15:0] $end
+$var wire 1 (" load $end
+$var wire 1 & reset $end
+$var wire 16 )" dataout [15:0] $end
+$var reg 16 *" dataout_reg [15:0] $end
+$upscope $end
+$scope module counter_ram8_3 $end
+$var wire 1 % clk $end
+$var wire 16 +" datain [15:0] $end
+$var wire 16 ," initial_value [15:0] $end
+$var wire 1 -" load $end
+$var wire 1 & reset $end
+$var wire 16 ." dataout [15:0] $end
+$var reg 16 /" dataout_reg [15:0] $end
+$upscope $end
+$scope module ram1 $end
+$var wire 14 0" address0 [13:0] $end
+$var wire 14 1" address1 [13:0] $end
+$var wire 14 2" address2 [13:0] $end
+$var wire 14 3" address3 [13:0] $end
+$var wire 1 < clear $end
+$var wire 1 % clk $end
+$var wire 1 $ datain0 $end
+$var wire 1 # datain1 $end
+$var wire 1 " datain2 $end
+$var wire 1 ! datain3 $end
+$var wire 1 4" store0 $end
+$var wire 1 5" store1 $end
+$var wire 1 6" store2 $end
+$var wire 1 7" store3 $end
+$var wire 17 8" dataout_address_and_condition3 [16:0] $end
+$var wire 17 9" dataout_address_and_condition2 [16:0] $end
+$var wire 17 :" dataout_address_and_condition1 [16:0] $end
+$var wire 17 ;" dataout_address_and_condition0 [16:0] $end
+$var wire 1 4 dataout3 $end
+$var wire 1 5 dataout2 $end
+$var wire 1 6 dataout1 $end
+$var wire 1 7 dataout0 $end
+$var integer 32 <" i [31:0] $end
+$upscope $end
+$scope module ram8 $end
+$var wire 16 =" address0 [15:0] $end
+$var wire 16 >" address1 [15:0] $end
+$var wire 16 ?" address2 [15:0] $end
+$var wire 16 @" address3 [15:0] $end
+$var wire 1 = clear $end
+$var wire 16 A" dataout3 [15:0] $end
+$var wire 16 B" dataout2 [15:0] $end
+$var wire 16 C" dataout1 [15:0] $end
+$var wire 16 D" dataout0 [15:0] $end
+$var integer 32 E" i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx E"
+b0 D"
+b11 C"
+b110 B"
+b1001 A"
+b1001 @"
+b110 ?"
+b11 >"
+b0 ="
+bx <"
+b10100111000xxxxx ;"
+b100111000xxxxxxxx :"
+b111000xxxxxxxxxxx 9"
+b0xxxxxxxxxxxxxx 8"
+07"
+06"
+05"
+04"
+b1001 3"
+b110 2"
+b11 1"
+b0 0"
+b1001 /"
+b1001 ."
+0-"
+b1001 ,"
+b0 +"
+b110 *"
+b110 )"
+0("
+b110 '"
+b0 &"
+b11 %"
+b11 $"
+0#"
+b11 ""
+b0 !"
+b0 ~
+b0 }
+0|
+b0 {
+b0 z
+b0 y
+b0 x
+0w
+0v
+b1001 u
+0t
+1s
+0r
+0q
+b1001 p
+b0xxxxxxxxxxxxxx o
+xn
+xm
+b1001 l
+b0 k
+b0 j
+b0 i
+0h
+0g
+b111 f
+0e
+xd
+0c
+0b
+b110 a
+b111000xxxxxxxxxxx `
+x_
+x^
+b110 ]
+b0 \
+b0 [
+b0 Z
+0Y
+0X
+b100 W
+0V
+xU
+0T
+0S
+b11 R
+b100111000xxxxxxxx Q
+xP
+xO
+b11 N
+b0 M
+b0 L
+b0 K
+0J
+0I
+b0 H
+0G
+1F
+0E
+0D
+b0 C
+b10100111000xxxxx B
+xA
+x@
+b0 ?
+b0 >
+0=
+0<
+b0 ;
+b11 :
+b110 9
+b1001 8
+07
+16
+15
+04
+b10100111000xxxxx 3
+b100111000xxxxxxxx 2
+b111000xxxxxxxxxxx 1
+b0xxxxxxxxxxxxxx 0
+b0 /
+b11 .
+b110 -
+b1001 ,
+b0 +
+b0 *
+b0 )
+b0 (
+0'
+x&
+0%
+x$
+x#
+x"
+x!
+$end
+#1000
+0A
+0n
+1P
+1_
+1@
+1O
+1^
+1m
+1G
+1V
+1e
+1t
+1'
+#3000
+0G
+0V
+0e
+0t
+0'
+#5000
+1A
+1n
+17
+b10100111000xxxxxx 3
+b10100111000xxxxxx B
+b10100111000xxxxxx ;"
+06
+b111000xxxxxxxxx 2
+b111000xxxxxxxxx Q
+b111000xxxxxxxxx :"
+b11000xxxxxxxxxxxx 1
+b11000xxxxxxxxxxxx `
+b11000xxxxxxxxxxxx 9"
+b0xxxxxxxxxxxxxxx 0
+b0xxxxxxxxxxxxxxx o
+b0xxxxxxxxxxxxxxx 8"
+1U
+1P
+0d
+0_
+b1 0"
+b100 1"
+b111 2"
+b1010 3"
+b1 /
+b1 ?
+b1 D"
+b100 .
+b100 N
+b100 C"
+b111 -
+b111 ]
+b111 B"
+b1010 ,
+b1010 l
+b1010 A"
+0$
+0@
+1#
+0O
+1"
+0^
+0!
+0m
+b10 H
+b1 ;
+b1 C
+b1 }
+b1 ~
+b1 ="
+b100 W
+b100 :
+b100 R
+b100 $"
+b100 %"
+b100 >"
+b1000 f
+b111 9
+b111 a
+b111 )"
+b111 *"
+b111 ?"
+b1010 u
+b1010 8
+b1010 p
+b1010 ."
+b1010 /"
+b1010 @"
+1%
+#10000
+0%
+#15000
+0n
+0P
+1m
+1^
+1O
+1@
+0A
+1_
+1t
+1e
+1V
+1G
+b0xxxxxxxxxxxxxxxx 0
+b0xxxxxxxxxxxxxxxx o
+b0xxxxxxxxxxxxxxxx 8"
+b1000xxxxxxxxxxxxx 1
+b1000xxxxxxxxxxxxx `
+b1000xxxxxxxxxxxxx 9"
+b111000xxxxxxxxxx 2
+b111000xxxxxxxxxx Q
+b111000xxxxxxxxxx :"
+07
+b100111000xxxxxxx 3
+b100111000xxxxxxx B
+b100111000xxxxxxx ;"
+1F
+1d
+17"
+b1011 3"
+16"
+b1000 2"
+15"
+b101 1"
+14"
+b10 0"
+b1000000000001011 ,
+b1000000000001011 l
+b1000000000001011 A"
+b1000000000001000 -
+b1000000000001000 ]
+b1000000000001000 B"
+b1000000000000101 .
+b1000000000000101 N
+b1000000000000101 C"
+b1000000000000010 /
+b1000000000000010 ?
+b1000000000000010 D"
+1$
+0"
+1!
+b1011 u
+b1011 8
+b1011 p
+b1011 ."
+b1011 /"
+b1011 @"
+b1001 f
+b1000 9
+b1000 a
+b1000 )"
+b1000 *"
+b1000 ?"
+b101 W
+b101 :
+b101 R
+b101 $"
+b101 %"
+b101 >"
+b10 H
+b10 ;
+b10 C
+b10 }
+b10 ~
+b10 ="
+1%
+#20000
+0%
+#25000
+bx +"
+0G
+0V
+0e
+xw
+xt
+xv
+xn
+0_
+1P
+1A
+04"
+b11 0"
+05"
+b110 1"
+06"
+b1001 2"
+x7"
+bx 3"
+x-"
+b11 /
+b11 ?
+b11 D"
+b110 .
+b110 N
+b110 C"
+b1001 -
+b1001 ]
+b1001 B"
+bx ,
+bx l
+bx A"
+x4
+bx 0
+bx o
+bx 8"
+05
+b1xxxxxxxxxxxxxx 1
+b1xxxxxxxxxxxxxx `
+b1xxxxxxxxxxxxxx 9"
+16
+b110001xxxxxxxxxxx 2
+b110001xxxxxxxxxxx Q
+b110001xxxxxxxxxxx :"
+17
+b101110001xxxxxxxx 3
+b101110001xxxxxxxx B
+b101110001xxxxxxxx ;"
+0$
+0#
+1"
+0!
+b100 H
+b11 ;
+b11 C
+b11 }
+b11 ~
+b11 ="
+b111 W
+b110 :
+b110 R
+b110 $"
+b110 %"
+b110 >"
+b1001 f
+b1001 9
+b1001 a
+b1001 )"
+b1001 *"
+b1001 ?"
+bx u
+b1100 8
+b1100 p
+b1100 ."
+b1100 /"
+b1100 @"
+1%
+#30000
+0%
+#35000
+1_
+b1xxxxxxxxxxxxxxx 1
+b1xxxxxxxxxxxxxxx `
+b1xxxxxxxxxxxxxxx 9"
+b10001xxxxxxxxxxxx 2
+b10001xxxxxxxxxxxx Q
+b10001xxxxxxxxxxxx :"
+07
+b1110001xxxxxxxxx 3
+b1110001xxxxxxxxx B
+b1110001xxxxxxxxx ;"
+1F
+1A
+0U
+0P
+xs
+xn
+b1010 2"
+b111 1"
+b100 0"
+b1010 -
+b1010 ]
+b1010 B"
+b111 .
+b111 N
+b111 C"
+b100 /
+b100 ?
+b100 D"
+1$
+0@
+1#
+0O
+0"
+0^
+x!
+0m
+b1101 8
+b1101 p
+b1101 ."
+b1101 /"
+b1101 @"
+b1010 f
+b1010 9
+b1010 a
+b1010 )"
+b1010 *"
+b1010 ?"
+b1000 W
+b111 :
+b111 R
+b111 $"
+b111 %"
+b111 >"
+b100 H
+b100 ;
+b100 C
+b100 }
+b100 ~
+b100 ="
+1%
+#40000
+0%
