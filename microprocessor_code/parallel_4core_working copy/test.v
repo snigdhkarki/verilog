@@ -422,14 +422,21 @@ module simplest4_para_tb;
     reg clk;
     reg preset;
     reg counter_ram8_reset;
-// change the value of 3 to n-1
-    wire accumulator_output[3:0];
+
+    wire accumulator_output0;
+    wire accumulator_output1;
+    wire accumulator_output2;
+    wire accumulator_output3;
 
     simplest4_para uut (
         .clk(clk),
         .preset(preset),
         .counter_ram8_reset(counter_ram8_reset),
-        .accumulator_output(accumulator_output)
+        .accumulator_output0(accumulator_output0),
+        .accumulator_output1(accumulator_output1),
+        .accumulator_output2(accumulator_output2),
+        .accumulator_output3(accumulator_output3)
+
     );
 
     always #5 clk = ~clk;
@@ -440,13 +447,12 @@ module simplest4_para_tb;
 
         clk=0;
         preset=0;
-        counter_ram8_reset =0;
         #1
         preset=1;
         #2
         preset=0;
         #2
-        #35
+        #65
         $finish;
 
     end

@@ -5,7 +5,7 @@ module ram_1bit_6bit_addr_better_big #(
     input [13:0] address[0:NUM_PORTS-1],
     input datain[0:NUM_PORTS-1], 
     input clear,         
-    input store[0:NUM_PORTS-1],
+    input store [0:NUM_PORTS-1], 
     input clk,         
     output dataout[0:NUM_PORTS-1],
     output [16:0] dataout_address_and_condition[0:NUM_PORTS-1]

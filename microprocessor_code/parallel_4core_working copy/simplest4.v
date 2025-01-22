@@ -3,6 +3,10 @@
 module simplest4(
     input clk,
     input preset,
+    input accumulator_output0,
+    input accumulator_output1,
+    input accumulator_output2,
+    input accumulator_output3,
     input [15:0] count_out,
     input [15:0] ram8_out,
     input d,
@@ -22,8 +26,8 @@ module simplest4(
     // reg ram8_clear;
     // reg ram1_clear;
     initial begin
-        assign preset_flipflop_input = 1'b0;
-        assign accumulator_flipflop_preset = 1'b0;
+        preset_flipflop_input = 1'b0;
+        accumulator_flipflop_preset = 1'b0;
         // ram8_clear = 1'b0;
         // ram1_clear = 1'b0;
     end
@@ -40,7 +44,7 @@ module simplest4(
         .q(accumulator_output)
     );
     mux_2to1 mux (
-        .A(~(d & accumulator_output)),
+        .A(((~(d & accumulator_output)) & (~ ram8_out[13])) | ((~(accumulator_output0 & accumulator_output)) & (ram8_out[13] & ram8_out[0])) |((~(accumulator_output1 & accumulator_output)) & (ram8_out[13] & ram8_out[1])) |((~(accumulator_output2 & accumulator_output)) & (ram8_out[13] & ram8_out[2])) |((~(accumulator_output3 & accumulator_output)) & (ram8_out[13] & ram8_out[3]))|((accumulator_output) & (ram8_out[13] & ram8_out[4]))),
         .B(d),
         .Sel(p_out),
         .Y(mux_out)

@@ -9,11 +9,10 @@ module counter_16bit_better_big (
     reg [15:0] dataout_reg;
 
     initial begin 
-        dataout_reg <=  clk;
+        dataout_reg = initial_value;
     end
 
-    always @(posedge clk) begin
-        $display("dataout reg", dataout_reg);
+    always @(posedge clk or posedge reset) begin
         if (reset) begin
             dataout_reg <= 16'b0000000000000000; 
         end else if (load) begin

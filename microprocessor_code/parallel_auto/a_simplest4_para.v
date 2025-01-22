@@ -17,11 +17,27 @@ module simplest4_para#(
     wire [16:0] dataout_address_and_condition[0:NUM_PORTS-1];
     wire [15:0] count_out[0:NUM_PORTS-1];
     wire [15:0] stack_out[0:NUM_PORTS-1];
-    wire [3:0] d;
+    wire d [0:NUM_PORTS-1];
+    reg [13:0] address_bus[0:NUM_PORTS-1];
+    genvar i3;
+    generate
+        for (i3 = 0; i3 < n; i3 = i3 + 1) begin: address_bus_loop
+            assign address_bus[i3] = {ram8_out[i3][13],ram8_out[i3][12],ram8_out[i3][11],ram8_out[i3][10],ram8_out[i3][9],ram8_out[i3][8],ram8_out[i3][7],ram8_out[i3][6], ram8_out[i3][5],ram8_out[i3][4],ram8_out[i3][3],ram8_out[i3][2],ram8_out[i3][1],ram8_out[i3][0]};
+        end
+    endgenerate
+    reg store_bit[0:NUM_PORTS-1];
+    genvar i2;
+    generate
+        for (i2 = 0; i2 < n; i2 = i2 + 1) begin : store_loop
+            assign store_bit[i2] = ram8_out[i2][15]; 
+        end
+    endgenerate   
 
+ 
     initial begin
-        ram8_clear = 1'b0;
-        ram1_clear = 1'b0;
+        assign ram8_clear = 1'b0;
+        assign ram1_clear = 1'b0;
+        //change this according to how many core
         counter_initial[0] = 16'h00;
         counter_initial[1] = 16'h03;
         counter_initial[2] = 16'h06;
@@ -57,10 +73,10 @@ module simplest4_para#(
     );
 
     ram_1bit_6bit_addr_better_big ram1 (
-        .address({ram8_out[13],ram8_out[12],ram8_out[11],ram8_out[10],ram8_out[9],ram8_out[8],ram8_out[7],ram8_out[6], ram8_out[5],ram8_out[4],ram8_out[3],ram8_out[2],ram8_out[1],ram8_out[0]}),
+        .address(address_bus),
         .datain(accumulator_output),
         .clear(ram1_clear),
-        .store(ram8_out[15]),
+        .store(store_bit),
         .clk(clk),
         .dataout(d),
         .dataout_address_and_condition(dataout_address_and_condition)

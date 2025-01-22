@@ -10,7 +10,7 @@ module stack (
     reg [4:0] sp;               
 
     initial begin
-        assign sp = 0; 
+        sp = 0; 
     end
 
     always @(posedge clk) begin
